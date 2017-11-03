@@ -4,4 +4,4 @@ files/*
 *~
 *.log
 *.pid
-studentdirectory/migrations/*
+studentdirectory/migrations
