@@ -143,14 +143,15 @@ $(function(){
                 for (var i = 0; i < response.length; i++){
                     //simplify server data
                     //if record has no image
-                    var imageUrl, image;
+                    var imageUrl, image = [];
                     if (response[i].fields.image == null){
                         imageUrl, image = "";
                     }else{
-                        image = response[i].fields.image[0];
+                        image.push(response[i].fields.image[0]);
                         imageUrl = response[i].fields.image[1]
                     }
-                        
+                    console.log(image);
+                    console.log(imageUrl);
                     var record = {
                         id: response[i].pk,
                         model:response[i].model,
