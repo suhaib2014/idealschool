@@ -1,4 +1,4 @@
-idealschool/*.pyc
+/*.pyc
 studentdirectory/*.pyc
 *.pyc
 *.sqlite3
